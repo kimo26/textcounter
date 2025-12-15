@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/yourusername/textcounter/main/assets/logo.svg" alt="TextCounter Logo" width="200">
+  <img src="https://raw.githubusercontent.com/kimo26/textcounter/main/assets/logo.svg" alt="TextCounter Logo" width="200">
 </p>
 
 <h1 align="center">TextCounter</h1>
@@ -9,12 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://pypi.org/project/textcounter/"><img src="https://img.shields.io/pypi/v/textcounter?color=blue&label=PyPI" alt="PyPI"></a>
-  <a href="https://pypi.org/project/textcounter/"><img src="https://img.shields.io/pypi/pyversions/textcounter" alt="Python Versions"></a>
-  <a href="https://github.com/yourusername/textcounter/actions"><img src="https://img.shields.io/github/actions/workflow/status/yourusername/textcounter/tests.yml?label=tests" alt="Tests"></a>
-  <a href="https://codecov.io/gh/yourusername/textcounter"><img src="https://img.shields.io/codecov/c/github/yourusername/textcounter?color=green" alt="Coverage"></a>
-  <a href="https://github.com/yourusername/textcounter/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License"></a>
-  <a href="https://pepy.tech/project/textcounter"><img src="https://img.shields.io/pepy/dt/textcounter?color=blue" alt="Downloads"></a>
+  <img src="https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue" alt="Python Versions">
+  <a href="https://github.com/kimo26/textcounter/actions"><img src="https://img.shields.io/github/actions/workflow/status/kimo26/textcounter/tests.yml?label=tests" alt="Tests"></a>
+  <a href="https://github.com/kimo26/textcounter/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License"></a>
 </p>
 
 <p align="center">
@@ -49,16 +46,10 @@ analyzer.word_frequency().top(3)  # → [('the', 2), ('quick', 1), ('brown', 1)]
 
 ## 📦 Installation
 
-### From PyPI (Recommended)
-
-```bash
-pip install textcounter
-```
-
 ### From Source
 
 ```bash
-git clone https://github.com/yourusername/textcounter.git
+git clone https://github.com/kimo26/textcounter.git
 cd textcounter
 pip install -e .
 ```
@@ -439,78 +430,12 @@ class TextAnalyzer:
 
 ---
 
-## 📤 Publishing to PyPI
-
-### First Time Setup
-
-1. **Create accounts:**
-   - [PyPI](https://pypi.org/account/register/) - Production
-   - [TestPyPI](https://test.pypi.org/account/register/) - Testing
-
-2. **Update `pyproject.toml`:**
-   ```toml
-   [project]
-   name = "your-unique-package-name"
-   authors = [{name = "Your Name", email = "you@example.com"}]
-   ```
-
-3. **Update URLs:**
-   ```toml
-   [project.urls]
-   Homepage = "https://github.com/yourusername/textcounter"
-   ```
-
-### Manual Publishing
-
-```bash
-# Install build tools
-pip install build twine
-
-# Build the package
-python -m build
-
-# Check the package
-twine check dist/*
-
-# Upload to TestPyPI first
-twine upload --repository testpypi dist/*
-
-# Test installation from TestPyPI
-pip install --index-url https://test.pypi.org/simple/ textcounter
-
-# Upload to production PyPI
-twine upload dist/*
-```
-
-### Automated Publishing (GitHub Actions)
-
-This package includes GitHub Actions workflows for automated publishing:
-
-1. **Push to GitHub:**
-   ```bash
-   git remote add origin https://github.com/yourusername/textcounter.git
-   git push -u origin main
-   ```
-
-2. **Configure PyPI token:**
-   - Go to PyPI → Account Settings → API tokens
-   - Create token with "Entire account" scope
-   - In GitHub repo → Settings → Secrets → Actions
-   - Add secret: `PYPI_API_TOKEN` = your token
-
-3. **Create a release:**
-   - Go to GitHub → Releases → Create new release
-   - Tag: `v1.0.0`
-   - The workflow automatically builds and publishes!
-
----
-
 ## 🧪 Development
 
 ### Setup
 
 ```bash
-git clone https://github.com/yourusername/textcounter.git
+git clone https://github.com/kimo26/textcounter.git
 cd textcounter
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
@@ -587,9 +512,8 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 
 ## 📬 Links
 
-- **PyPI:** [pypi.org/project/textcounter](https://pypi.org/project/textcounter/)
-- **Documentation:** [github.com/yourusername/textcounter#readme](https://github.com/yourusername/textcounter#readme)
-- **Issues:** [github.com/yourusername/textcounter/issues](https://github.com/yourusername/textcounter/issues)
+- **Documentation:** [github.com/kimo26/textcounter#readme](https://github.com/kimo26/textcounter#readme)
+- **Issues:** [github.com/kimo26/textcounter/issues](https://github.com/kimo26/textcounter/issues)
 - **Changelog:** [CHANGELOG.md](CHANGELOG.md)
 
 ---
@@ -597,3 +521,4 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 <p align="center">
   Made with ❤️ for the Python community
 </p>
+

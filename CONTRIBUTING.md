@@ -10,7 +10,7 @@ By participating in this project, you agree to maintain a respectful and inclusi
 
 ### Reporting Bugs
 
-1. Check if the bug has already been reported in [Issues](https://github.com/yourusername/textcounter/issues)
+1. Check if the bug has already been reported in [Issues](https://github.com/kimo26/textcounter/issues)
 2. If not, create a new issue with:
    - A clear, descriptive title
    - Steps to reproduce the bug
@@ -21,7 +21,7 @@ By participating in this project, you agree to maintain a respectful and inclusi
 
 ### Suggesting Features
 
-1. Check if the feature has been suggested in [Issues](https://github.com/yourusername/textcounter/issues)
+1. Check if the feature has been suggested in [Issues](https://github.com/kimo26/textcounter/issues)
 2. Create a new issue with:
    - A clear, descriptive title
    - Detailed description of the proposed feature
@@ -56,7 +56,7 @@ By participating in this project, you agree to maintain a respectful and inclusi
 
 1. Clone your fork:
    ```bash
-   git clone https://github.com/yourusername/textcounter.git
+   git clone https://github.com/kimo26/textcounter.git
    cd textcounter
    ```
 
@@ -96,3 +96,5 @@ By participating in this project, you agree to maintain a respectful and inclusi
 ## Questions?
 
 Feel free to open an issue or start a discussion if you have questions!
+
+

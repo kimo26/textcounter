@@ -380,3 +380,5 @@ class TestDunderMethods:
         s = str(analyzer)
         assert "words" in s
         assert "sentences" in s
+
+

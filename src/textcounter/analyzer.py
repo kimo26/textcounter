@@ -1011,3 +1011,5 @@ class TextAnalyzer:
         return (
             f"TextAnalyzer: {stats.word_count} words, {stats.sentence_count} sentences"
         )
+
+

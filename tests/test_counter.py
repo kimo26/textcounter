@@ -356,3 +356,5 @@ class TestSummary:
         tc = TextCounter("Hello World!")
         summary = tc.summary
         assert "unique_words" in summary
+
+

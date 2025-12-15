@@ -46,3 +46,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Comprehensive test suite with 95%+ coverage
 - Full type hint support
 - Zero runtime dependencies
+
+

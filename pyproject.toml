@@ -10,10 +10,10 @@ readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.8"
 authors = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "Karim Galal", email = "kg1606@gmail.com"}
 ]
 maintainers = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "Karim Galal", email = "kg1606@gmail.com"}
 ]
 keywords = [
     "text",
@@ -55,11 +55,11 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/textcounter"
-Documentation = "https://github.com/yourusername/textcounter#readme"
-Repository = "https://github.com/yourusername/textcounter.git"
-Issues = "https://github.com/yourusername/textcounter/issues"
-Changelog = "https://github.com/yourusername/textcounter/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/kimo26/textcounter"
+Documentation = "https://github.com/kimo26/textcounter#readme"
+Repository = "https://github.com/kimo26/textcounter.git"
+Issues = "https://github.com/kimo26/textcounter/issues"
+Changelog = "https://github.com/kimo26/textcounter/blob/main/CHANGELOG.md"
 
 [project.scripts]
 textcounter = "textcounter.cli:main"
@@ -105,3 +105,5 @@ testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_functions = ["test_*"]
 addopts = "-v --cov=textcounter --cov-report=term-missing"
+
+
