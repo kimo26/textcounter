@@ -139,7 +139,9 @@ class TestFilteringOptions:
 
     def test_min_length(self, capsys):
         """--min-length filters by word length."""
-        exit_code = main(["-t", "I am a developer", "-w", "--min-length", "3", "--json"])
+        exit_code = main(
+            ["-t", "I am a developer", "-w", "--min-length", "3", "--json"]
+        )
         captured = capsys.readouterr()
         data = json.loads(captured.out)
         assert data["words"] == 1  # Only "developer"
@@ -189,7 +191,7 @@ class TestFileInput:
 
     def test_read_from_file(self, capsys):
         """Reading from file works."""
-        with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False) as f:
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False) as f:
             f.write("Hello World")
             f.flush()
             temp_path = f.name

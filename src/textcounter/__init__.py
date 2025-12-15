@@ -15,8 +15,8 @@ Example:
     2
 """
 
-from textcounter.counter import TextCounter
 from textcounter.analyzer import TextAnalyzer
+from textcounter.counter import TextCounter
 
 __version__ = "1.0.0"
 __author__ = "Your Name"

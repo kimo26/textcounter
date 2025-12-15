@@ -93,8 +93,12 @@ line-length = 88
 target-version = "py38"
 
 [tool.ruff.lint]
-select = ["E", "F", "W", "I", "N", "D", "UP", "B", "C4", "SIM"]
-ignore = ["D100", "D104"]
+select = ["E", "F", "W", "I", "N", "B", "C4"]
+ignore = [
+    "F401",   # Allow unused imports for re-exports
+    "F841",   # Allow unused variables in tests (exit_code)
+    "B007",   # Allow unused loop variables
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

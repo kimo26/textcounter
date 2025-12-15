@@ -6,6 +6,7 @@ and Pythonic interface behaviors (iterator protocol, context management, etc.).
 """
 
 import pytest
+
 from textcounter import TextCounter
 from textcounter.counter import CountResult
 
@@ -34,7 +35,7 @@ class TestCountResultDataclass:
         """CountResult can be compared to integers."""
         result = CountResult(total=10)
         assert result == 10
-        assert not (result == 11)
+        assert result != 11
 
     def test_comparison_operators(self):
         """CountResult supports comparison operators."""
@@ -195,9 +196,7 @@ class TestCharacterCounting:
         """Multiple filtering options work together."""
         tc = TextCounter("Hello, World! 123")
         result = tc.char_count(
-            ignore_spaces=True,
-            ignore_punctuation=True,
-            ignore_digits=True
+            ignore_spaces=True, ignore_punctuation=True, ignore_digits=True
         )
         assert result.total == 10
 
@@ -341,7 +340,14 @@ class TestSummary:
         """Summary contains expected keys."""
         tc = TextCounter("Hello World!")
         summary = tc.get_summary()
-        expected = ["characters", "characters_no_spaces", "words", "lines", "sentences", "paragraphs"]
+        expected = [
+            "characters",
+            "characters_no_spaces",
+            "words",
+            "lines",
+            "sentences",
+            "paragraphs",
+        ]
         for key in expected:
             assert key in summary
 

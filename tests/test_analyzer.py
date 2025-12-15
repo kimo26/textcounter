@@ -6,6 +6,7 @@ pattern extraction, and advanced NLP-lite features.
 """
 
 import pytest
+
 from textcounter import TextAnalyzer
 from textcounter.analyzer import FrequencyResult, ReadabilityResult, TextStatistics
 
@@ -198,8 +199,13 @@ class TestReadability:
         assert isinstance(result.flesch_reading_ease, (int, float))
         assert isinstance(result.flesch_kincaid_grade, (int, float))
         assert result.complexity_rating in [
-            "Very Easy", "Easy", "Fairly Easy", "Standard",
-            "Fairly Difficult", "Difficult", "Very Difficult"
+            "Very Easy",
+            "Easy",
+            "Fairly Easy",
+            "Standard",
+            "Fairly Difficult",
+            "Difficult",
+            "Very Difficult",
         ]
 
     def test_empty_text(self):
@@ -230,8 +236,11 @@ class TestReadability:
         analyzer = TextAnalyzer("The cat sat.")
         result = analyzer.readability()
         assert result.target_audience in [
-            "Elementary school", "Middle school", "High school",
-            "College", "Graduate/Professional"
+            "Elementary school",
+            "Middle school",
+            "High school",
+            "College",
+            "Graduate/Professional",
         ]
 
 
