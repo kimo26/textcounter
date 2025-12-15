@@ -209,5 +209,3 @@ class TestFileInput:
         """Missing file raises error."""
         with pytest.raises(SystemExit):
             main(["nonexistent_file_12345.txt", "-c"])
-
-

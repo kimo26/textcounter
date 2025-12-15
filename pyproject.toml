@@ -93,7 +93,7 @@ line-length = 88
 target-version = "py38"
 
 [tool.ruff.lint]
-select = ["E", "F", "W", "I", "N", "B", "C4"]
+select = ["E", "F", "W", "N", "B", "C4"]  # "I" removed - isort handles imports
 ignore = [
     "F401",   # Allow unused imports for re-exports
     "F841",   # Allow unused variables in tests (exit_code)

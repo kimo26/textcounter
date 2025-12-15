@@ -871,5 +871,3 @@ class TextCounter:
             "sentences": self.sentence_count().total,
             "paragraphs": self.paragraph_count().total,
         }
-
-
