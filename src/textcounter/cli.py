@@ -330,7 +330,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     
     # Comprehensive statistics
     if args.stats:
-        stats = analyzer.statistics()
+        stats = analyzer.statistics
         richness = analyzer.vocabulary_richness()
         results["statistics"] = {
             "char_count": stats.char_count,
