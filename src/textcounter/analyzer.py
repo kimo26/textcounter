@@ -881,7 +881,8 @@ class TextAnalyzer:
         cache_key = "statistics"
         if cache_key not in self._cache:
             self._cache[cache_key] = self._compute_statistics()
-        return self._cache[cache_key]
+        result: TextStatistics = self._cache[cache_key]
+        return result
 
     def _compute_statistics(self) -> TextStatistics:
         """Compute all statistics."""

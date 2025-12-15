@@ -188,7 +188,8 @@ def get_text(args: argparse.Namespace) -> str:
         The text to analyze.
     """
     if args.text:
-        return args.text
+        text: str = args.text
+        return text
 
     if args.file:
         try:
